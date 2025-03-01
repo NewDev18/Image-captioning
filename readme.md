@@ -32,10 +32,6 @@ The LSTM decoder generates captions based on image features:
    - Calculate loss using cross-entropy between predicted and actual words
    - Backpropagate and update model parameters
 
-3. **Evaluation**:
-   - Use BLEU, METEOR, CIDEr, and ROUGE metrics
-   - Visual inspection of generated captions
-
 ## Inference
 During inference:
 1. Image is processed by the CNN encoder
@@ -57,22 +53,6 @@ During inference:
 ```bash
 pip install -r requirements.txt
 ```
-
-### Training
-```bash
-python train.py --image_dir /path/to/images --caption_path /path/to/captions --learning_rate 0.001 --num_epochs 30
-```
-
-### Generating Captions
-```bash
-python generate_caption.py --image /path/to/image.jpg --model /path/to/model_checkpoint.pth
-```
-
-## Model Performance
-The model achieves the following performance on the test set:
-- BLEU-4: 0.XX
-- METEOR: 0.XX
-- CIDEr: 0.XX
 
 ## Future Improvements
 - Implement attention mechanism
