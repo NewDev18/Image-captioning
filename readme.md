@@ -1,13 +1,13 @@
 # Image Captioning with PyTorch: CNN Encoder + LSTM Decoder
 
 ## Overview
-This repository implements an image captioning model using a CNN encoder and LSTM decoder architecture in PyTorch. The model automatically generates textual descriptions for images by combining computer vision and natural language processing techniques.
+This repository implements an image captioning model using a CNN encoder and LSTM decoder architecture in PyTorch.
 
 ## Architecture
 
 ### CNN Encoder
 The CNN encoder extracts visual features from images:
-- Uses a pre-trained CNN (ResNet, VGG, etc.) with the classification layer removed
+- Uses a pre-trained CNN inception_v3 with the classification layer removed
 - Transforms images into feature vectors that capture visual content
 - Feature dimension is reduced to match the input requirements of the LSTM
 
@@ -16,7 +16,6 @@ The LSTM decoder generates captions based on image features:
 - Takes the encoded image features as initial input
 - Generates words sequentially, with each word prediction depending on previous words
 - Uses word embeddings to represent words as dense vectors
-- Includes attention mechanism (optional) to focus on different parts of the image
 
 ## Training Process
 
@@ -45,7 +44,6 @@ During inference:
 - NLTK
 - Pillow
 - NumPy
-- tqdm
 
 ## Usage
 
