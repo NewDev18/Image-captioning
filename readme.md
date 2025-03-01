@@ -21,7 +21,7 @@ The LSTM decoder generates captions based on image features:
 ## Training Process
 
 1. **Data Preparation**:
-   - Process image dataset (e.g., COCO, Flickr30k)
+   - Process image dataset (e.g., COCO, Flickr8k(used in this repo))
    - Tokenize captions and build vocabulary
    - Create image-caption pairs for training
 
