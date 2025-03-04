@@ -1,5 +1,8 @@
 # Image Captioning with PyTorch: CNN Encoder + LSTM Decoder
 
+## Dataset
+https://www.kaggle.com/datasets/adityajn105/flickr8k
+
 ## Overview
 This repository implements an image captioning model using a CNN encoder and LSTM decoder architecture in PyTorch.
 
